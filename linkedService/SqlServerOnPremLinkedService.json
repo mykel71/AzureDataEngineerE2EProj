@@ -6,7 +6,7 @@
 		"typeProperties": {
 			"server": "MICHAELS",
 			"database": "AdventureWorksLT2022",
-			"encrypt": "mandatory",
+			"encrypt": "optional",
 			"trustServerCertificate": false,
 			"authenticationType": "SQL",
 			"userName": "mike",
