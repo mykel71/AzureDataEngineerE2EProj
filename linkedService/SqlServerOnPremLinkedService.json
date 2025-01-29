@@ -1,0 +1,27 @@
+{
+	"name": "SqlServerOnPremLinkedService",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "MICHAELS",
+			"database": "AdventureWorksLT2022",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "mike",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "password"
+			}
+		},
+		"connectVia": {
+			"referenceName": "SHIRs",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
